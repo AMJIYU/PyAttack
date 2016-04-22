@@ -1,0 +1,11 @@
+/ewebeditor/admin_login.asp
+/ewebeditor/admin/login.asp
+/ewebeditor/admin_default.asp
+/admin/Editor/admin_login.asp
+/admin/Editor/admin/login.asp
+/admin/ewebeditor/admin_login.asp
+/admin/ewebeditor/admin/login.asp
+/admin/edit/admin/login.asp
+/admin/edit/admin_login.asp
+/Editor/admin/login.asp
+/Editor/admin_login.asp

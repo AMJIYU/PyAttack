@@ -1,0 +1,11 @@
+/admin/ewebedit/admin_login.aspx
+/admin/htmedit/db/ewebeditor.aspx
+/admin/m_bian/db/%23ewebeditor.aspx
+/menber/ewebeditor/admin/login.aspx
+/ewebeditor/admin/default.aspx
+/ewebeditor/admin/login.aspx
+/zwfqewebeditor/admin/login.aspx
+/ewebedit/ewebeditor.aspx
+/ewebeditor.aspx
+/ewebeditor1013.aspx
+
