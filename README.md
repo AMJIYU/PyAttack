@@ -3,7 +3,7 @@
 基于python的批量漏洞检测（抓鸡）脚本......
 
 
-【HELP】
+
 
 Usage:
 
@@ -16,6 +16,9 @@ Usage:
 [*]python  mass_attack.py -n all    针对批量网站进行所有漏洞检测
 
 
+
+
+
 @支持漏洞列表:
 
 [1]ewebeditor
@@ -26,7 +29,12 @@ Usage:
 
 
 
+
+
 @版本:1.0  2016.04.22   --by  nmask
+
+
+
 
 
 
