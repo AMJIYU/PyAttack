@@ -21,7 +21,7 @@ class mask_thread(threading.Thread):
 	def run(self):
 		th.acquire()
 		try:
-			self.urls=self.queue.get().replace("\n","").strip()  #如果队列为空，不阻塞
+			self.urls=self.queue.get().replace("\n","").strip()  #如果队列为空，阻塞
 		except:
 			pass
 		else:
