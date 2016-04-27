@@ -1,9 +1,14 @@
 #!coding=utf-8
 
 '''
-@__author__:nmask
+@author:tzc-mask
 
 @功能:批量抓鸡,oyea
+
+'''
+'''
+1.百度抓取太慢了
+2.struts2检测脚本再优化
 '''
 
 from multiprocessing import Process,Queue
@@ -17,8 +22,8 @@ import threading
 class mass_attack:
 	def __init__(self):
 		self.list_paths=open("./dicts/ewebeditor/asp1.txt").readlines()
-		self.keyword=["inurl:.asp"]           
-		self.address=[" intitle:政府"]           #百度爬虫配置
+		self.keyword=["inurl:.action"]           
+		self.address=["政府"]           #百度爬虫配置
 		self.run()
 
 	def _inputs(self,queue):               #填充队列

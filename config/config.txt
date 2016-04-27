@@ -1,1 +1,1 @@
-inurl:.asp intitle 学校
+inurl:.asp intitle 政府
