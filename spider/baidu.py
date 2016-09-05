@@ -16,7 +16,11 @@ class baidu:
 		self.x=1
 		self.lists=[]
 		self.queue=queue
+		self.res=r"URL=\'([^']*)\'"
+		self.headers={'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6)' }
 		self.run()
+		
+
 
 	def run(self):
 			self.search()
@@ -32,9 +36,7 @@ class baidu:
 
 			for i in htmllist:
 				try:
-					f=urllib2.urlopen(i,timeout=5)
-					url_true=f.geturl()
-
+					url_true=self.geturl_urllib2(i)
 					print url_true
 
 					self.lists.append(url_true)
@@ -59,3 +61,18 @@ class baidu:
 		f=open("logs/url.txt","a")
 		f.write(i+"\n")
 		f.close()
+
+	def geturl_urllib2(self,url):      ##访问百度链接，获取真实的url
+		try:
+			f=urllib2.urlopen(url=url,timeout=20).read()
+			p=re.compile(self.res)
+			L=p.findall(f)
+			if len(L)>0:
+				url_true=L[0]
+			else:
+				url_true=""
+		except Exception,e:
+			print e
+			url_true=""
+
+		return url_true
