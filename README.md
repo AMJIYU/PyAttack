@@ -29,4 +29,6 @@
   -t TARGET, --target=TARGET  目标url,默认为自动抓取(*可选*)</br></br>
 ```
   
-### @版本:1.0   2016.04.22    by nmask
+#### @版本:1.0   
+#### @author:by nmask
+#### @time: 2016.04.22    
